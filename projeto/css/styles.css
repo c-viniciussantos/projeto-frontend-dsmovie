@@ -1,5 +1,31 @@
+/* O import é do google fonts */ 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
-h1 {
-    color: red;
+/* box-sizing é para que a borda do elemento não ocupe todos os espaços*/
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    background-color: #e8e8e8;
+}
+
+header {
+    background-color: #4D41C0;
+    color: #ffffff;
+}
+
+/*Deixar o nav do header um ao lado do outro*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*  hover: é quando passa o mouse em cima
+    text-decoration para remover o sublinhado ou qualquer decoração do texto*/
+a, a:hover {
+    text-decoration: none;
+    color: unset;
 }
