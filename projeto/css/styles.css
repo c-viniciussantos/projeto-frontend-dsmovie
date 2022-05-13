@@ -1,19 +1,35 @@
 /* O import é do google fonts */ 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+:root {
+    --bg-gray: #e8e8e8;
+    --color-primary: #4D41C0;
+    --white: #ffffff;
+}
+
 /* box-sizing é para que a borda do elemento não ocupe todos os espaços*/
+/* foi necessário colocar um margin para alinhar o texto, mas o bootstrap sobreescreve esse */
 * {
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
+/* para o bootstrap entender que está sobreescrevendo algo, deve ser especifico na tag */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 html, body {
-    background-color: #e8e8e8;
+    background-color: var(--bg-gray);
 }
 
 header {
-    background-color: #4D41C0;
-    color: #ffffff;
+    background-color: var(--color-primary);
+    color: var(--white);
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 /*Deixar o nav do header um ao lado do outro*/
@@ -23,9 +39,28 @@ nav {
     justify-content: space-between;
 }
 
+nav h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a {
+    font-size: 12px;
+    font-weight: 400;
+}
+
 /*  hover: é quando passa o mouse em cima
     text-decoration para remover o sublinhado ou qualquer decoração do texto*/
 a, a:hover {
     text-decoration: none;
     color: unset;
+}
+
+.dsmovie-contact-container {
+    display: flex;
+    align-items: center;
+}
+
+.dsmovie-contact-container img {
+    margin-right: 10px;
 }
