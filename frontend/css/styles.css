@@ -6,6 +6,7 @@
     --text-gray: #4A4A4A;
     --color-primary: #4D41C0;
     --white: #ffffff;
+    --text-light-gray: #aaa;
 }
 
 /* box-sizing é para que a borda do elemento não ocupe todos os espaços*/
@@ -108,6 +109,7 @@ a, a:hover {
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+    border: 0;
 }
 
 .dsmovie-form-container {
@@ -125,4 +127,26 @@ a, a:hover {
     /*alinhar em vertical*/
     flex-direction: column;
     align-items: center;
+    border-radius: 0 0 8px 8px;
+}
+
+.dsmovie-form{
+    width: 100%;
+}
+
+.dsmovie-form-group {
+    margin-bottom: 20px;
+}
+
+.dsmovie-form-group label {
+    font-size: 12px;
+    color: var(--text-light-gray);
+}
+
+.dsmovie-form-btn-container {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
