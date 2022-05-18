@@ -116,5 +116,13 @@ a, a:hover {
 }
 
 .dsmovie-form-description {
-    
+    /*cor de fundo*/
+    background-color: var(--white);
+    /*espaçamento lateral*/
+    padding: 20px;
+    /*preparar form de apresentação*/
+    display: flex;
+    /*alinhar em vertical*/
+    flex-direction: column;
+    align-items: center;
 }
